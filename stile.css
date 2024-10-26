@@ -12,6 +12,7 @@
     background-color: orange; 
     border-radius: 10px; 
     color: white;
+    z-index: 100;
 }
 
 .border_15 {
@@ -26,27 +27,30 @@
   margin: 25px;
 }
 
+
 .cb-cookie-banner { 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 999; 
-    border-radius: 0; 
-    display: none;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #333;
+  color: #fff;
+  z-index: 9999;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .custom-menu-cookie {
-  background-color: white;
-  color: orange;
-  border-color: orange;
+  background-color: #d7812b;;
+  color: white;
+  border-color: #d7812b;;
   border-radius: 5px;
 }
 
 .custom-menu-cookie:hover {
-  background-color: orange;
-  border-color: orange;
-  color: #fff;
+  background-color: white;
+  border-color: white;
+  color: #d7812b;;
 }
 
 .one_box {
@@ -59,7 +63,13 @@
 
 .title_line {
   text-align: center; 
-  color: lightslategray;
+  color: white; /* lightslategray; */
+
+}
+
+.title_line_modal {
+  text-align: center; 
+  color: white; /* lightslategray; */
 
 }
 
@@ -78,9 +88,53 @@
   }
 
 .btn.custom-menu-1 {
-    border: none;
-    background-color: whitesmoke;
-    color: #d7812b;
+    border: whitesmoke; /* none; */
+    background-color: transparent; /* whitesmoke; */
+    color: white; /* #d7812b; */
   }
 
 
+
+
+
+  body {
+    background-image: url('radioback.jpg'); /* Путь к вашему изображению */
+    background-size: cover;
+    background-attachment: fixed; /* Фиксированный фон */
+    background-position: center;
+}
+
+
+.big_box::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: inherit; /* Наследуем фон из body */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Размытие для фона */
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный слой для затемнения */
+    z-index: -1; /* Отправляем слой за контент */
+}
+
+
+.modal-content {
+  background-color: #282524;
+}
+
+
+.btn-close {
+  background-color: white; /* orange; */
+  border-radius: 50px;
+}
+
+.modal-title {
+  color: #d7812b;
+}
+
+.wp-image-155 {
+  border-radius: 20px;
+}
