@@ -98,7 +98,8 @@
 
 
   body {
-    background-image: url('radioback.jpg'); /* Путь к вашему изображению */
+    /* background-image: url('radioback.jpg'); Путь к вашему изображению */
+    background-image: url('radiobackwinter.png'); /* Путь к вашему изображению */
     background-size: cover;
     background-attachment: fixed; /* Фиксированный фон */
     background-position: center;
