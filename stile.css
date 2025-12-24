@@ -115,8 +115,8 @@
     background-image: inherit; /* Наследуем фон из body */
     background-size: cover;
     background-position: center;
-    filter: blur(3px); /* Размытие для фона */
-    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный слой для затемнения */
+    filter: blur(7px); /* Размытие для фона */
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный слой для затемнения */
     z-index: -1; /* Отправляем слой за контент */
 }
 
